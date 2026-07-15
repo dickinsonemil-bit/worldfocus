@@ -1,5 +1,5 @@
 let countries = [];
-let currentIndex = 0;
+let currentCountry = null;
 
 
 async function loadCountries() {
@@ -8,7 +8,31 @@ async function loadCountries() {
 
     countries = await response.json();
 
-    showCountry(countries[currentIndex]);
+
+    chooseDailyCountry();
+
+}
+
+
+
+function chooseDailyCountry() {
+
+    const today = new Date();
+
+    const dayNumber =
+        today.getFullYear() * 10000 +
+        (today.getMonth() + 1) * 100 +
+        today.getDate();
+
+
+    const index = dayNumber % countries.length;
+
+
+    currentCountry = countries[index];
+
+
+    showCountry(currentCountry);
+
 }
 
 
@@ -28,28 +52,31 @@ function showCountry(country) {
     document.getElementById("description").innerHTML = country.history;
 
 
+    document.getElementById("day").innerHTML =
+        "🌍 Pays du jour";
+
+
     document.getElementById("news").innerHTML = `
         <article>
-            <b>📰 Actualités bientôt disponibles</b>
+            <b>📰 Actualités</b>
             <p>
-            Les informations du jour pour ${country.name}
+            Les actualités de ${country.name}
             seront ajoutées dans la prochaine version.
             </p>
         </article>
     `;
+
 }
 
 
 
 function newCountry() {
 
-    currentIndex++;
+    let randomIndex =
+        Math.floor(Math.random() * countries.length);
 
-    if (currentIndex >= countries.length) {
-        currentIndex = 0;
-    }
 
-    showCountry(countries[currentIndex]);
+    showCountry(countries[randomIndex]);
 
 }
 
