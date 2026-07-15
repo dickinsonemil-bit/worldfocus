@@ -1,0 +1,42 @@
+[
+  {
+    "name": "France",
+    "flag": "🇫🇷",
+    "capital": "Paris",
+    "currency": "Euro",
+    "population": "68 millions",
+    "history": "La France est un pays d'Europe occidentale avec une histoire marquée par la monarchie, la Révolution française et un rôle important dans la politique mondiale."
+  },
+  {
+    "name": "Népal",
+    "flag": "🇳🇵",
+    "capital": "Katmandou",
+    "currency": "Roupie népalaise",
+    "population": "30 millions",
+    "history": "Le Népal est un pays himalayen connu pour l'Everest, ses traditions anciennes et sa diversité culturelle."
+  },
+  {
+    "name": "Namibie",
+    "flag": "🇳🇦",
+    "capital": "Windhoek",
+    "currency": "Dollar namibien",
+    "population": "2,5 millions",
+    "history": "La Namibie est un pays d'Afrique australe connu pour le désert du Namib, ses grands espaces et sa faune exceptionnelle."
+  },
+  {
+    "name": "Japon",
+    "flag": "🇯🇵",
+    "capital": "Tokyo",
+    "currency": "Yen",
+    "population": "124 millions",
+    "history": "Le Japon est un archipel d'Asie orientale combinant traditions millénaires, haute technologie et une forte influence culturelle."
+  },
+  {
+    "name": "Brésil",
+    "flag": "🇧🇷",
+    "capital": "Brasilia",
+    "currency": "Real brésilien",
+    "population": "203 millions",
+    "history": "Le Brésil est le plus grand pays d'Amérique du Sud, connu pour l'Amazonie, sa diversité culturelle et ses ressources naturelles."
+  }
+]
